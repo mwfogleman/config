@@ -1,6 +1,9 @@
 # Set cursor as a pointer, instead of the ugly cross
 xsetroot -cursor_name left_ptr
 
+# Set caps-lock as control key.
+setxkbmap -layout gb -option ctrl:nocaps
+
 # Terminal Emulator: urxvt
 # Shell: fish
 # Terminal Multiplexer: tmux
