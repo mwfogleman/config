@@ -2,7 +2,7 @@
 xsetroot -cursor_name left_ptr
 
 # Set caps-lock as control key.
-setxkbmap -layout gb -option ctrl:nocaps
+setxkbmap -layout dvorak -option ctrl:nocaps
 
 # Terminal Emulator: urxvt
 # Shell: fish
