@@ -1,5 +1,5 @@
 function eboot
-	pkill emacs;
-emacs --daemon;
-e
+	emacsclient -e "(kill-emacs)"
+	emacs --daemon
+	e
 end
