@@ -1,1 +1,3 @@
+softvol=yes
+softvol-max=1000
 heartbeat-cmd="xscreensaver-command -deactivate >&- 2>&- &"
