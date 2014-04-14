@@ -5,5 +5,6 @@
 	helper = cache --timeout=3600
 [core]
 	editor = emacs
+	editor = emacsclient
 [merge]
 	tool = emerge
