@@ -1,4 +1,4 @@
 function gowiki
-	cd /home/michael/Dropbox/wiki
-tiddlywiki --server 8080
+	cd /home/michael/Dropbox/
+	tiddlywiki wiki --server
 end
