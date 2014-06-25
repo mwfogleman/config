@@ -1,3 +1,3 @@
 function dwn
-	poweroff
+	sudo poweroff
 end
