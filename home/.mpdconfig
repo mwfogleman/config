@@ -1,0 +1,12 @@
+bind_to_address "127.0.0.1"
+port "6600"
+
+music_directory "~/music/"
+db_file "~/music/database"
+playlist_directory "~/music/playlists"
+
+log_file "~/music/log"
+
+auto_update "no"
+
+restore_paused "yes"

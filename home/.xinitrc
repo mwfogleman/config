@@ -13,3 +13,4 @@ urxvt -e fish -c "tmux new-session -n$USER -s$USER@$HOSTNAME" &
 emacs --daemon &
 xscreensaver -no-splash &
 dropboxd &
+mpd $HOME/.mpdconfig &
