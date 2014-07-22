@@ -1,0 +1,3 @@
+function music
+	ncmpcpp
+end
