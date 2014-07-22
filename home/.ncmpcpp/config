@@ -1,0 +1,4 @@
+ncmpcpp_directory = "~/.ncmpcpp"
+lyrics_directory = "~/.ncmpccp/lyrics"
+
+colors_enabled = no
