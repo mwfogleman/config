@@ -2,3 +2,8 @@ ncmpcpp_directory = "~/.ncmpcpp"
 lyrics_directory = "~/.ncmpccp/lyrics"
 
 colors_enabled = no
+
+allow_physical_files_deletion = "no"
+allow_physical_directories_deletion = "no"
+
+mouse_support = "no"
