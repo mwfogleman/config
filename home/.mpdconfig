@@ -9,4 +9,6 @@ log_file "~/music/log"
 
 auto_update "no"
 
+save_absolute_paths_in_playlists "yes"
+
 restore_paused "yes"
