@@ -1,0 +1,21 @@
+library: /home/michael/music/library.db
+directory: /home/michael/music/
+import:
+    move: yes
+    write: yes
+    resume: ask
+    log: /home/michael/music/beetslog.txt
+    languages: en
+    
+paths:
+    default: $albumartist/$album/$track $title
+    singleton: $artist/$title
+    comp: $artist/$album/$track $title
+
+color: no
+
+# paths:
+#     default: $genre/$albumartist/$album/$track $title
+#     singleton: Singletons/$artist - $title
+#     comp: $genre/$album/$track $title
+#     albumtype:soundtrack: Soundtracks/$album/$track $title
