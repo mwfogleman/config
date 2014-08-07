@@ -1,0 +1,2 @@
+#!/bin/bash
+exec xulrunner /home/michael/src/conkeror/application.ini "$@"
