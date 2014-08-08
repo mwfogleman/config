@@ -1,24 +1,31 @@
-// auto completion in the minibuffer
-minibuffer_auto_complete_default = true;
-url_completion_use_history = true; // should work since bf05c87405
-url_completion_use_bookmarks = true
+// Set Downloads directory
+cwd=get_home_directory();
+cwd.append("Downloads");
 
 // Set Emacs as external editor
 editor_shell_command = "emacsclient -c"
 
+url_remoting_fn = load_url_in_new_buffer;
+
+homepage = "https://mail.google.com";
+
+// Auto completion in the minibuffer
+minibuffer_auto_complete_default = true;
+url_completion_use_history = true; // should work since bf05c87405
+url_completion_use_bookmarks = true
+
 // redefine C-f as "forwards" and C-b as "backwards"
-// using F and B (that is Shift+F, Shift+B is actually rather inconvenient since
-// many other command use Control and so requires shifting fingers)
 define_key(content_buffer_normal_keymap, "C-f", "forward");
 define_key(content_buffer_normal_keymap, "C-b", "back");
 
-// make M-f and M-b switch to next and previous buffers
+// Make M-f and M-b switch to next and previous buffers
 define_key(content_buffer_normal_keymap, "M-f", "buffer-next");
 define_key(content_buffer_normal_keymap, "M-b", "buffer-previous");
 
 // Use M-f to follow link in new background buffer
 define_key(default_global_keymap, "M-f", "follow-new-buffer-background");
-// open url in new background buffer with M-l
+
+// Open url in new background buffer with M-l
 define_key(default_global_keymap, "M-l", "follow-new-buffer-background");
 
 interactive("find-url-new-background-buffer",
@@ -30,19 +37,18 @@ interactive("find-url-new-background-buffer",
 // Make C-x 0 "kill current buffer"
 define_key(default_global_keymap, "C-x C-k", "kill-current-buffer")
 
+// Don't let kill-buffer close the window
+can_kill_last_buffer = false;
+
 // Make C-x C-m "execute extended command"
 define_key(default_global_keymap, "C-x C-m", "execute-extended-command")
 
-// Set Downloads directory
-cwd=get_home_directory();
-cwd.append("Downloads");
-
-// xkcd add mouse-over text
-xkcd_add_title = true;
-
 // Web Jumps
+define_webjump("gmail", "https://mail.google.com");
+define_webjump("archwiki", "https://wiki.archlinux.org/index.php?search=%s"); // arch wiki
 define_webjump("rottentomatoes", "http://www.rottentomatoes.com/search/full_search.php?search=%s");
 
-require("page-modes/wikipedia.js");
-wikipedia_webjumps_format = "%s"; // controls the names of the webjumps.  default is "wikipedia-%s".
-define_wikipedia_webjumps("en");
+//allow for 'contrib' files
+load_paths.unshift("chrome://conkeror-contrib/content/");
+
+require("adblockplus");
