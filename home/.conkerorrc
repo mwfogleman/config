@@ -48,6 +48,8 @@ define_webjump("gmail", "https://mail.google.com");
 define_webjump("archwiki", "https://wiki.archlinux.org/index.php?search=%s"); // arch wiki
 define_webjump("rottentomatoes", "http://www.rottentomatoes.com/search/full_search.php?search=%s");
 define_webjump("pinboard", "https://pinboard.in/u:mwfogleman");
+define_webjump("webster", "http://machaut.uchicago.edu/websters");
+define_webjump("grim", "http://grimoire.arrdem.com/")
 
 //allow for 'contrib' files
 load_paths.unshift("chrome://conkeror-contrib/content/");
