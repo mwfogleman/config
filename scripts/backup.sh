@@ -19,4 +19,4 @@ echo 'Keep In Touch'
 sudo rsync --progress --delete -avz /home/michael/Dropbox/keepintouch.data /mnt/;
 
 echo 'Passwords'
-sudo rsync --progress --delete -avz /home/michael/Downloads/passwords.org.gpg /mnt/;
+sudo rsync --progress --delete -avz /home/michael/passwords.org.gpg /mnt/;
