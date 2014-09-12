@@ -1,9 +1,12 @@
-ncmpcpp_directory = "~/.ncmpcpp"
-lyrics_directory = "~/.ncmpccp/lyrics"
+mpd_host = localhost
+mpd_port = 6600
+mpd_music_dir = ~/music
+
+ncmpcpp_directory = ~/.ncmpcpp
+lyrics_directory = ~/.ncmpcpp/lyrics
 
 colors_enabled = no
 
-allow_physical_files_deletion = "no"
-allow_physical_directories_deletion = "no"
+allow_for_physical_item_deletion = no
 
 mouse_support = "no"
