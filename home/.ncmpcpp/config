@@ -9,4 +9,4 @@ colors_enabled = no
 
 allow_for_physical_item_deletion = no
 
-mouse_support = "no"
+mouse_support = no
