@@ -1,4 +1,11 @@
 {:user {:plugins [[cider/cider-nrepl "0.8.0-SNAPSHOT"]
                   [lein-try "0.4.3"]
-                  [lein-midje "3.1.3"]]
-        :dependencies [[org.clojure/tools.namespace "0.2.5"]]}}
+                  [lein-midje "3.1.3"]
+                  [lein-ancient "0.5.5"]
+                  [lein-kibit "0.0.8"]
+                  [lein-bikeshed "0.1.8"]
+                  [lein-cloverage "1.0.2"]
+                  [jonase/eastwood "0.1.4"]]
+        :dependencies [[org.clojure/tools.namespace "0.2.5"]
+                       [slamhound "1.5.5"]]
+        :aliases {"slamhound" ["run" "-m" "slam.hound"]}}}
