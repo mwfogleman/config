@@ -6,6 +6,6 @@
                   [lein-bikeshed "0.1.8"]
                   [lein-cloverage "1.0.2"]
                   [jonase/eastwood "0.1.4"]]
-        :dependencies [[org.clojure/tools.namespace "0.2.5"]
+        :dependencies [[org.clojure/tools.namespace "0.2.7"]
                        [slamhound "1.5.5"]]
         :aliases {"slamhound" ["run" "-m" "slam.hound"]}}}
