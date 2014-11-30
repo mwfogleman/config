@@ -1,11 +1,15 @@
-{:user {:plugins [[cider/cider-nrepl "0.8.0-SNAPSHOT"]
+{:user {:plugins [[cider/cider-nrepl "0.8.2-SNAPSHOT"]
                   [lein-try "0.4.3"]
                   [lein-midje "3.1.3"]
                   [lein-ancient "0.5.5"]
                   [lein-kibit "0.0.8"]
                   [lein-bikeshed "0.1.8"]
                   [lein-cloverage "1.0.2"]
-                  [jonase/eastwood "0.1.4"]]
+                  [lein-datomic "0.2.0"]
+                  [refactor-nrepl "0.2.1"]
+                  [jonase/eastwood "0.2.0"]]
         :dependencies [[org.clojure/tools.namespace "0.2.7"]
+                       [org.clojure/tools.trace "0.7.8"]
                        [slamhound "1.5.5"]]
-        :aliases {"slamhound" ["run" "-m" "slam.hound"]}}}
+        :aliases {"slamhound" ["run" "-m" "slam.hound"]}
+        :datomic {:install-location "/Users/michael/.m2/repository/com/datomic/datomic-pro/0.9.4880"}}}
