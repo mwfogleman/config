@@ -1,4 +1,4 @@
-{:user {:plugins [[cider/cider-nrepl "0.8.2-SNAPSHOT"]
+{:user {:plugins [[cider/cider-nrepl "0.8.2"]
                   [lein-try "0.4.3"]
                   [lein-midje "3.1.3"]
                   [lein-ancient "0.5.5"]
@@ -6,6 +6,7 @@
                   [lein-bikeshed "0.1.8"]
                   [lein-cloverage "1.0.2"]
                   [lein-datomic "0.2.0"]
+                  [lein-plz "0.3.0"]
                   [refactor-nrepl "0.2.1"]
                   [jonase/eastwood "0.2.0"]]
         :dependencies [[org.clojure/tools.namespace "0.2.7"]
