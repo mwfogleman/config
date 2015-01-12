@@ -11,6 +11,6 @@
                   [jonase/eastwood "0.2.0"]]
         :dependencies [[org.clojure/tools.namespace "0.2.7"]
                        [org.clojure/tools.trace "0.7.8"]
+                       [acyclic/squiggly-clojure "0.1.2-SNAPSHOT"]
                        [slamhound "1.5.5"]]
-        :aliases {"slamhound" ["run" "-m" "slam.hound"]}
-        :datomic {:install-location "/Users/michael/.m2/repository/com/datomic/datomic-pro/0.9.4880"}}}
+        :aliases {"slamhound" ["run" "-m" "slam.hound"]}}}
