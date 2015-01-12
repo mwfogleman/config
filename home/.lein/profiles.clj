@@ -7,7 +7,7 @@
                   [lein-cloverage "1.0.2"]
                   [lein-datomic "0.2.0"]
                   [lein-plz "0.3.0"]
-                  [refactor-nrepl "0.2.1"]
+                  [refactor-nrepl "0.3.0-SNAPSHOT"]
                   [jonase/eastwood "0.2.0"]]
         :dependencies [[org.clojure/tools.namespace "0.2.7"]
                        [org.clojure/tools.trace "0.7.8"]
