@@ -1,4 +1,4 @@
 function pyserv
 	pwd
-python2 -m SimpleHTTPServer
+        python -m SimpleHTTPServer
 end
